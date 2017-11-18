@@ -3,7 +3,7 @@ package guru.springframework.didemo.services;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-@Service
+@Component
 public class GreetingServiceImpl implements GreetingService {
 
     public static final String HELLO_GURUS = "Hello Gurus!!!! I am a simple GreetingServiceImpl";
