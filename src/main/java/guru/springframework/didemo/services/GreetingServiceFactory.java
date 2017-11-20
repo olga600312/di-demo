@@ -14,16 +14,16 @@ public class GreetingServiceFactory {
         GreetingService service;
         switch (lng) {
             case "en":
-                service = new PrimaryGreetingService();
+                service = new PrimaryGreetingService(greetingRepository);
                 break;
             case "ru":
-                service = new PrimaryRussianGreetingService();
+                service = new PrimaryRussianGreetingService(greetingRepository);
                 break;
             case "de":
-                service = new PrimaryGermanGreetingService();
+                service = new PrimaryGermanGreetingService(greetingRepository);
                 break;
             default:
-                service = new PrimaryGreetingService();
+                service = new PrimaryGreetingService(greetingRepository);
         }
         return service;
     }
