@@ -4,6 +4,15 @@ public class FakeDataSource {
     private String user;
     private String password;
     private String url;
+    private String javaHome;
+
+    public String getJavaHome() {
+        return javaHome;
+    }
+
+    public void setJavaHome(String javaHome) {
+        this.javaHome = javaHome;
+    }
 
     public String getUser() {
         return user;
